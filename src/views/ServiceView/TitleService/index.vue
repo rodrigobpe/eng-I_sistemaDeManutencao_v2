@@ -1,14 +1,14 @@
 <script setup>
 import { useServiceStore } from "../../../store/serviceStore";
 
-const serviceStore = useServiceStore();
+const store = useServiceStore();
 </script>
 <template>
   <div class="title-service">
     <h1>Carrinho</h1>
     <p>
-      {{ serviceStore.services.length }}
-      {{ serviceStore.services.length === 1 ? "produto" : "produtos" }}
+      {{ store.services.length }}
+      {{ store.services.length === 1 ? "produto" : "produtos" }}
     </p>
   </div>
   <span class="border"></span>

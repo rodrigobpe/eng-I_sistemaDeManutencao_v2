@@ -1,11 +1,11 @@
 <script setup>
 import { useServiceStore } from "../../../store/serviceStore";
-const serviceStore = useServiceStore();
+const store = useServiceStore();
 </script>
 <template>
   <div class="service-desc">
     <div
-      v-for="service in serviceStore.services"
+      v-for="service in store.services"
       class="service-card"
       :key="service.id"
     >

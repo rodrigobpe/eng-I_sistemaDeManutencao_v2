@@ -1,6 +1,6 @@
 <script setup>
 import { useServiceStore } from "../../../store/serviceStore";
-const serviceStore = useServiceStore();
+const store = useServiceStore();
 </script>
 
 <template>
@@ -8,7 +8,7 @@ const serviceStore = useServiceStore();
     <h1 class="resume-title">Resumo da compra</h1>
     <div class="resume-description">
       <p>Subtotal</p>
-      <p>R${{ serviceStore.totalCount }}</p>
+      <p>R${{ store.totalCount }}</p>
     </div>
     <div class="resume-description">
       <p>Frete</p>
@@ -16,7 +16,7 @@ const serviceStore = useServiceStore();
     </div>
     <div class="resume-description">
       <p class="resume-total">Total</p>
-      <p class="resume-total">R${{ serviceStore.totalCount }}</p>
+      <p class="resume-total">R${{ store.totalCount }}</p>
     </div>
     <button @click.prevent="teste">Realizar Pagamento</button>
   </section>

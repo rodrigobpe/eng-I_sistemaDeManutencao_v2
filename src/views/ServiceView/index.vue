@@ -5,12 +5,12 @@ import TotalService from "./TotalService/index.vue";
 
 import { useServiceStore } from "../../store/serviceStore";
 
-const serviceStore = useServiceStore();
-serviceStore.getTasks()
+const store = useServiceStore();
+store.getTasks()
 
 </script>
 <template>
-  <main class="main-services">
+  <main>
     <TitleService />
     <section class="section-services">
       <ServiceDescription />
@@ -20,9 +20,6 @@ serviceStore.getTasks()
 </template>
 
 <style>
-.main-services {
-  padding: 0 9.6rem;
-}
 .section-services{
   display: flex;
   justify-content: space-between;
