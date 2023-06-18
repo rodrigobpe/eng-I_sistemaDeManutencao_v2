@@ -44,7 +44,7 @@ header .header-link {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 130%;
-  margin: 0 4rem 0 0;
+  margin: 0 0 0 4rem;
 }
 
 header .active{

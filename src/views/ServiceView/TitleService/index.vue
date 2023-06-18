@@ -11,12 +11,12 @@ const serviceStore = useServiceStore();
       {{ serviceStore.services.length === 1 ? "produto" : "produtos" }}
     </p>
   </div>
+  <span class="border"></span>
 </template>
 
 <style >
 .title-service {
   display: flex;
-  padding: 0 9.6rem;
   align-items: baseline;
 }
 
@@ -29,5 +29,15 @@ const serviceStore = useServiceStore();
   font-weight: 300;
   font-size: 2rem;
   line-height: 130%;
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 9rem;
+    margin: 3.3rem 0 4rem 0;
+    height: 2px;
+    background-color: var(--color-light-gray);
 }
 </style>
