@@ -1,9 +1,16 @@
-const { defineStore } = require("pinia");
+import {defineStore} from 'pinia'
+import api from '../services'
 
-const useServiceStore = defineStore('service', {
+export const useServiceStore = defineStore('service', {
     state: () => ({
-
+        services:[]
     }),
     getters:{},
-    actions:{}
+    actions:{
+        async getTasks(){
+            const res = await api.get('/services')
+            const data = res.data
+            this.services = data
+        }
+    }
 })

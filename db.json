@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "services":[
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id":0,
+      "title":"Capa iPhone 14 Pro Max",
+      "price":80,
+      "quantity":1,
+      "img":"https://ae01.alicdn.com/kf/S52bb7b19eabb47d8bc03acc29b7c99afg/Shinomiya-kaguya-ngulo-olhos-caixa-do-telefone-para-o-iphone-14-13-12-11-pro-max.jpg_Q90.jpg_.webp"
+    },
+    {
+      "id":1,
+      "title":"Pano de Polimento Apple",
+      "price":250,
+      "quantity":1,
+      "img":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MM6F3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632956535000"
+    },
+    {
+      "id":2,
+      "title":"Apple AirPods Pro 2ª geração",
+      "price":1800,
+      "quantity":1,
+      "img":"https://m.media-amazon.com/images/I/61CVih3UpdL.__AC_SY445_SX342_QL70_ML2_.jpg"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "budgets":[
+    {}
+  ]
 }
