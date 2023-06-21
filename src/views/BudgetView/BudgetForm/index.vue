@@ -66,7 +66,7 @@ const handleNewBudget = () => {
 .budget-container {
   display: flex;
   width: 100%;
-  height: 60rem;
+  height: 66rem;
   justify-content: center;
   align-items: center;
 }
@@ -84,8 +84,7 @@ const handleNewBudget = () => {
 
 .budget-container input {
   height: 2rem;
-    padding: 1rem;
-  width: 100%;
+  padding: 1rem;    
   margin: 0 0 1.8rem 0;
   border: 1px solid var(--color-light-gray);
   border-radius: 20px;
@@ -100,6 +99,7 @@ const handleNewBudget = () => {
 
 .budget-container button {
   color: var(--color-positive);
+  width: 100%;
   padding: 1.2rem 6rem;
   background-color: var(--color-green);
   border-radius: 0.8rem;
